@@ -1,0 +1,26 @@
+{
+  "name": "bun-oxc-rsbuild",
+  "description": "Example setup with Bun, OXC and Rsbuild.",
+  "scripts": {
+    "start": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview",
+    "lint:oxlint": "oxlint",
+    "format:binome": "@biomejs/biome format **/* --write",
+    "lint:binome": "@biomejs/biome lint **/*"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@rsbuild/core": "^0.2.3",
+    "@rsbuild/plugin-react": "^0.2.3",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "bun-types": "^1.0.17",
+    "oxlint": "^0.0.20",
+    "typescript": "^5.3.0"
+  }
+}
