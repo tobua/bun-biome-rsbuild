@@ -14,7 +14,11 @@ jobs:
       - name: 🐇 Install Dependencies using Bun
         run: bun install
       - name: 🧹 Lint
-        run: bun run lint:oxlint
+        run: bun lint:oxlint
+      - name: 🧹 Lint (Biome)
+        run: bun lint:biome
+      - name: 🧹 Format (Biome)
+        run: bun format:biome
       - name: 🚧 Build
         run: bun run build
       - name: 🧪 Test
