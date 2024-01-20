@@ -1,22 +1,30 @@
-import { createRoot } from "react-dom/client"
-import logo from "./logo.png"
+import { useState } from 'react'
+import { createRoot } from 'react-dom/client'
+import logo from './logo.png'
 
 const App = () => {
-	return (
-		<div
-			style={{
-				display: "flex",
-				flexDirection: "column",
-				gap: 20,
-				alignItems: "center",
-				fontFamily: "sans-serif",
-			}}
-		>
-			<img style={{ width: 200, height: 200 }} src={logo} alt="Logo" />
-			<h1>Rsbuild with React</h1>
-			<p>Start building amazing things with Rsbuild.</p>
-		</div>
-	)
+  const [count, setCount] = useState(0)
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 20,
+        alignItems: 'center',
+        fontFamily: 'sans-serif',
+      }}
+    >
+      <img style={{ maxHeight: 100 }} src={logo} alt="Logo" />
+      <h1>Bun, OXC/Biome and Rsbuild</h1>
+      <p>Starter project to demonstrate some new technologies on the horizon.</p>
+      <div style={{ display: 'flex', gap: 20 }}>
+        <span>Count: {count}</span>
+        <button type="button" onClick={() => setCount(count + 1)}>
+          Increment
+        </button>
+      </div>
+    </div>
+  )
 }
 
-createRoot(document.getElementById("root")!).render(<App />)
+createRoot(document.getElementById('root') as HTMLElement).render(<App />)

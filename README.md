@@ -16,3 +16,7 @@ bun run lint
 # Test with Bun
 bun test
 ```
+
+## Notes
+
+The Biome VS Code extension will fail to initialize if the `@biomejs/biome` dependency isn't available in the first workspace project. If you have other projects open in your workspace the workaround is to open this project in a separate window.

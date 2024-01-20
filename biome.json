@@ -12,7 +12,9 @@
   },
   "javascript": {
     "formatter": {
-      "semicolons": "asNeeded"
+      "semicolons": "asNeeded",
+      "quoteStyle": "single",
+      "indentStyle": "space"
     }
   },
   "formatter": {

@@ -7,20 +7,20 @@
     "preview": "rsbuild preview",
     "lint:oxlint": "oxlint",
     "format:biome": "biome format **.{ts,tsx} --write",
-    "lint:biome": "biome lint **"
+    "lint:biome": "biome lint **.{ts,tsx}"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.4.1",
-    "@rsbuild/core": "^0.2.18",
-    "@rsbuild/plugin-react": "^0.2.18",
+    "@biomejs/biome": "^1.5.2",
+    "@rsbuild/core": "^0.3.5",
+    "@rsbuild/plugin-react": "^0.3.5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "bun-types": "^1.0.21",
-    "oxlint": "^0.1.2",
+    "bun-types": "^1.0.24",
+    "oxlint": "^0.2.1",
     "typescript": "^5.3.3"
   }
 }
