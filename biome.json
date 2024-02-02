@@ -9,6 +9,9 @@
       "all": true,
       "suspicious": {
         "noConsoleLog": "error"
+      },
+      "style": {
+        "noDefaultExport": "off"
       }
     },
     "ignore": ["node_modules"]

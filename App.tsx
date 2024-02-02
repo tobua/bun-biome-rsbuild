@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react'
+import type { CSSProperties } from 'react'
 import { Counter } from './Counter'
 import logo from './logo.png'
 
