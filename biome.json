@@ -6,7 +6,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "all": true,
+      "suspicious": {
+        "noConsoleLog": "error"
+      }
     },
     "ignore": ["node_modules"]
   },

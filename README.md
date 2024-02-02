@@ -1,20 +1,23 @@
-# Bun, OXC and Rsbuild Setup
+# Bun, Biome/OXC and Rsbuild Setup
 
 <img align="right" src="https://github.com/tobua/bun-oxc-rsbuild/raw/main/logo.png" width="30%" alt="Logo" />
 
-Example setup with Bun, OXC and Rsbuild. To use OXC features in the editor install the [OXC VS Code extension](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode).
+Example setup with Bun, Biome and Rsbuild. To use Biome and OXC features in the editor install the [Biome VS Code extension](https://marketplace.visualstudio.com/items?itemName=biomejs.biome) and the [OXC VS Code extension](https://marketplace.visualstudio.com/items?itemName=oxc.oxc-vscode).
 
 ```sh
 # Develop (Opens page in browser)
 bun start
 # Build
 bun run build
-# Preview (Build for production and serve)
-bun run preview
+# Preview (Serves current build)
+bun preview
+# Format and Lint (Biome)
+bun format:biome
+bun lint:biome
 # Lint (OXLint)
-bun run lint
+bun lint:oxlint
 # Test with Bun
-bun test
+bun run test
 ```
 
 ## Notes

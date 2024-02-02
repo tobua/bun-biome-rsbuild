@@ -8,7 +8,7 @@ jobs:
   lint-format-test-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🐰 Install Bun
         uses: oven-sh/setup-bun@v1
       - name: 🐇 Install Dependencies using Bun
@@ -22,4 +22,4 @@ jobs:
       - name: 🚧 Build
         run: bun run build
       - name: 🧪 Test
-        run: bun test
+        run: bun run test
