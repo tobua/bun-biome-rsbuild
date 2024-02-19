@@ -11,5 +11,5 @@
     "moduleResolution": "bundler",
     "types": ["@rsbuild/core/types"]
   },
-  "include": ["index.tsx"]
+  "include": ["index.tsx", "test"]
 }

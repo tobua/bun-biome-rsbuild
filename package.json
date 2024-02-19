@@ -6,8 +6,8 @@
     "build": "rsbuild build",
     "preview": "rsbuild preview",
     "lint:oxlint": "oxlint -c oxlint.json",
-    "format:biome": "biome format **.{ts,tsx} --write",
-    "lint:biome": "biome lint **.{ts,tsx}",
+    "format:biome": "biome format . --write",
+    "lint:biome": "biome lint .",
     "test": "bun test --preload ./test/setup.ts"
   },
   "dependencies": {
@@ -17,15 +17,15 @@
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
     "@happy-dom/global-registrator": "^13.3.8",
-    "@rsbuild/core": "^0.3.11",
-    "@rsbuild/plugin-react": "^0.3.11",
-    "@testing-library/jest-dom": "^6.4.1",
+    "@rsbuild/core": "^0.4.3",
+    "@rsbuild/plugin-react": "^0.4.3",
+    "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
-    "@types/bun": "^1.0.4",
+    "@types/bun": "^1.0.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "oxlint": "^0.2.6",
+    "oxlint": "^0.2.9",
     "typescript": "^5.3.3"
   }
 }

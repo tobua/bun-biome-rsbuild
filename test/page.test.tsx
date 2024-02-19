@@ -2,7 +2,6 @@ import { expect, test } from 'bun:test'
 import * as matchers from '@testing-library/jest-dom/matchers'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import React from 'react'
 import { App } from '../App'
 
 // @ts-ignore
