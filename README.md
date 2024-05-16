@@ -12,12 +12,13 @@ bun run build
 # Preview (Serves current build)
 bun preview
 # Format and Lint (Biome)
-bun format:biome
-bun lint:biome
+bun check:biome
 # Lint (OXLint)
 bun lint:oxlint
 # Test with Bun
 bun run test
+# Check types with TypeScript
+bun types
 ```
 
 ## Notes

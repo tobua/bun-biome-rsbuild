@@ -15,10 +15,10 @@ jobs:
         run: bun install
       - name: 🧹 Lint
         run: bun lint:oxlint
-      - name: 🧹 Lint (Biome)
-        run: bun lint:biome
-      - name: 🧹 Format (Biome)
-        run: bun format:biome
+      - name: 🧹 Lint & Format (Biome)
+        run: bun check:biome
+      - name: ⚙️ Check types
+        run: bun types
       - name: 🚧 Build
         run: bun run build
       - name: 🧪 Test

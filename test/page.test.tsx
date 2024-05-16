@@ -1,10 +1,10 @@
 import { expect, test } from 'bun:test'
+// biome-ignore lint/style/noNamespaceImport: All matchers required for extension.
 import * as matchers from '@testing-library/jest-dom/matchers'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { App } from '../App'
 
-// @ts-ignore
 expect.extend(matchers)
 
 test('Increments counter.', async () => {

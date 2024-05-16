@@ -2,30 +2,30 @@
   "name": "bun-oxc-rsbuild",
   "description": "Example setup with Bun, OXC and Rsbuild.",
   "scripts": {
-    "start": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview",
+    "check:biome": "biome check --apply .",
     "lint:oxlint": "oxlint -c oxlint.json",
-    "format:biome": "biome format . --write",
-    "lint:biome": "biome lint .",
-    "test": "bun test --preload ./test/setup.ts"
+    "preview": "rsbuild preview",
+    "start": "rsbuild dev --open",
+    "test": "bun test --preload ./test/setup.ts",
+    "types": "tsc"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@happy-dom/global-registrator": "^13.3.8",
-    "@rsbuild/core": "^0.4.3",
-    "@rsbuild/plugin-react": "^0.4.3",
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
+    "@biomejs/biome": "^1.7.3",
+    "@happy-dom/global-registrator": "^14.11.0",
+    "@rsbuild/core": "^0.6.15",
+    "@rsbuild/plugin-react": "^0.6.15",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
-    "@types/bun": "^1.0.6",
+    "@types/bun": "^1.1.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "oxlint": "^0.2.9",
-    "typescript": "^5.3.3"
+    "oxlint": "^0.3.5",
+    "typescript": "^5.4.5"
   }
 }

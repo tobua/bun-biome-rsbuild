@@ -1,15 +1,16 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["DOM", "ES2020"],
-    "module": "ESNext",
-    "jsx": "react-jsx",
-    "strict": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "bundler",
-    "types": ["@rsbuild/core/types"]
-  },
-  "include": ["index.tsx", "test"]
+	"compilerOptions": {
+		"target": "ES2020",
+		"lib": ["DOM", "ES2020"],
+		"module": "ESNext",
+		"jsx": "react-jsx",
+		"strict": true,
+		"skipLibCheck": true,
+		"noEmit": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"moduleResolution": "bundler",
+		"types": ["@rsbuild/core/types", "bun"]
+	},
+	"include": ["index.tsx", "test"]
 }
